@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Your Event Equipment | Mahlako Event Rentals</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="#" class="brand">Mahlako<span>EventRentals</span></a>
+    <nav class="site-nav">
+      <a href="#equipment">Equipment</a>
+      <a href="#book">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <p class="hero-eyebrow">Est. family run · Chairs, tents &amp; event essentials</p>
+    <h1>Everything your event needs, delivered and set up.</h1>
+    <p>Chairs, tents, a meat cutter for the day's event, portable toilets, and a mobile
+       freezer to keep it all cold. Pick what you need below and book in under two minutes.</p>
+    <a href="#book" class="hero-cta">Start a Booking →</a>
+  </div>
+</section>
+
+<section class="section" id="equipment">
+  <div class="container">
+    <div class="section-heading">
+      <span class="tag-number">INVENTORY</span>
+      <h2>Our Gear</h2>
+    </div>
+    <p class="section-sub">Every item below ships clean, checked, and ready to set up. Set the
+      quantity you need for each item — your picks carry straight through to the booking form.</p>
+
+    <div class="tag-grid">
+
+      <article class="item-tag">
+        <div class="tag-serial">Item 1</div>
+        <div class="tag-photo"><img src="images/chairs.jpg" alt="Stacked event chairs"></div>
+        <h3>Chairs</h3>
+        <p class="desc">Sturdy stackable chairs, sold per unit — book as many as your guest list needs.</p>
+        <div class="qty-control">
+          <label for="chairsQtyDisplay">Quantity</label>
+          <div class="qty-stepper">
+            <button type="button" data-step="-1" data-target="chairsQtyDisplay" aria-label="Decrease chairs">−</button>
+            <input type="text" id="chairsQtyDisplay" data-mirror="chairsQty" value="0" inputmode="numeric" aria-live="polite">
+            <button type="button" data-step="1" data-target="chairsQtyDisplay" aria-label="Increase chairs">+</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="item-tag">
+        <div class="tag-serial">Item 2</div>
+        <div class="tag-photo"><img src="images/tent.jpg" alt="Event marquee tent"></div>
+        <h3>Tent</h3>
+        <p class="desc">Weatherproof marquee tent for shade and cover, delivered and pitched on site.</p>
+        <div class="qty-control">
+          <label for="tentQtyDisplay">Quantity</label>
+          <div class="qty-stepper">
+            <button type="button" data-step="-1" data-target="tentQtyDisplay" aria-label="Decrease tents">−</button>
+            <input type="text" id="tentQtyDisplay" data-mirror="tentQty" value="0" inputmode="numeric" aria-live="polite">
+            <button type="button" data-step="1" data-target="tentQtyDisplay" aria-label="Increase tents">+</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="item-tag">
+        <div class="tag-serial">Item 3</div>
+        <div class="tag-photo"><img src="images/meatcutter.jpg" alt="Meat cutter machine"></div>
+        <h3>Meat Cutter Machine</h3>
+        <p class="desc">Electric meat cutter for the day's catering — ideal for braais and large gatherings.</p>
+        <div class="qty-control">
+          <label for="meatCutterQtyDisplay">Quantity</label>
+          <div class="qty-stepper">
+            <button type="button" data-step="-1" data-target="meatCutterQtyDisplay" aria-label="Decrease meat cutters">−</button>
+            <input type="text" id="meatCutterQtyDisplay" data-mirror="meatCutterQty" value="0" inputmode="numeric" aria-live="polite">
+            <button type="button" data-step="1" data-target="meatCutterQtyDisplay" aria-label="Increase meat cutters">+</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="item-tag">
+        <div class="tag-serial">Item 4</div>
+        <div class="tag-photo"><img src="images/toilets.jfif" alt="Portable toilet unit"></div>
+        <h3>Portable Toilets</h3>
+        <p class="desc">Clean, serviced portable toilet units — book one per roughly 40–50 guests.</p>
+        <div class="qty-control">
+          <label for="toiletsQtyDisplay">Quantity</label>
+          <div class="qty-stepper">
+            <button type="button" data-step="-1" data-target="toiletsQtyDisplay" aria-label="Decrease portable toilets">−</button>
+            <input type="text" id="toiletsQtyDisplay" data-mirror="portableToiletsQty" value="0" inputmode="numeric" aria-live="polite">
+            <button type="button" data-step="1" data-target="toiletsQtyDisplay" aria-label="Increase portable toilets">+</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="item-tag">
+        <div class="tag-serial">Item 5</div>
+        <div class="tag-photo"><img src="images/freezer.jfif" alt="Mobile freezer unit"></div>
+        <h3>Mobile Freezer</h3>
+        <p class="desc">Portable freezer unit to keep drinks, meat, and perishables cold all day.</p>
+        <div class="qty-control">
+          <label for="freezerQtyDisplay">Quantity</label>
+          <div class="qty-stepper">
+            <button type="button" data-step="-1" data-target="freezerQtyDisplay" aria-label="Decrease mobile freezers">−</button>
+            <input type="text" id="freezerQtyDisplay" data-mirror="mobileFreezerQty" value="0" inputmode="numeric" aria-live="polite">
+            <button type="button" data-step="1" data-target="freezerQtyDisplay" aria-label="Increase mobile freezers">+</button>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section booking-section" id="book">
+  <div class="container">
+    <div class="section-heading">
+      <span class="tag-number">STEP 2</span>
+      <h2>Confirm Your Booking</h2>
+    </div>
+    <p class="section-sub">Fill in your details below. Your selected quantities from above are
+      carried through automatically — you'll get an on-screen confirmation the moment it's booked.</p>
+
+    <form class="booking-form" action="BookingServlet.do" method="post" id="bookingForm">
+
+      <div class="form-row">
+        <div class="field">
+          <label for="customerName">Full name</label>
+          <input type="text" id="customerName" name="customerName" required>
+        </div>
+        <div class="field">
+          <label for="customerPhone">Phone number</label>
+          <input type="tel" id="customerPhone" name="customerPhone" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="customerEmail">Email address</label>
+          <input type="email" id="customerEmail" name="customerEmail" required>
+        </div>
+        <div class="field">
+          <label for="eventDate">Event date</label>
+          <input type="date" id="eventDate" name="eventDate" required>
+        </div>
+      </div>
+
+      <div class="form-row single">
+        <div class="field">
+          <label for="deliveryAddress">Delivery address</label>
+          <input type="text" id="deliveryAddress" name="deliveryAddress" placeholder="Street, suburb, city">
+        </div>
+      </div>
+
+      <div class="form-row single">
+        <div class="field">
+          <label for="notes">Notes (optional)</label>
+          <textarea id="notes" name="notes" placeholder="Anything we should know — set-up time, access instructions, etc."></textarea>
+        </div>
+      </div>
+
+      <!-- hidden fields actually submitted; mirrored from the qty steppers above -->
+      <input type="hidden" name="chairsQty" id="chairsQty" value="0">
+      <input type="hidden" name="tentQty" id="tentQty" value="0">
+      <input type="hidden" name="meatCutterQty" id="meatCutterQty" value="0">
+      <input type="hidden" name="portableToiletsQty" id="portableToiletsQty" value="0">
+      <input type="hidden" name="mobileFreezerQty" id="mobileFreezerQty" value="0">
+
+      <div class="summary-box" id="summaryBox">
+        <span class="empty">No items selected yet — set quantities above.</span>
+      </div>
+
+      <button type="submit" class="submit-btn">Confirm Booking</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p><strong>Mahlako Event Rentals</strong> — chairs, tents, meat cutters, portable toilets &amp; mobile freezers.</p>
+    <p>Questions before booking? Call us +27 79 616 6444 or email in thabangmahlako9@gmail.com — we're happy to help you plan.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
